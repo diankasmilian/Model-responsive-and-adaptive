@@ -288,8 +288,29 @@ body {
 }
 .main-contant {
     flex: 0 1 50%;
+    align-self: center;
 }
+
+
 .main-title {
+    position: relative;
+    max-width: 520px;
+
+    font-weight: 500;
+    font-size: 51.2px;
+    line-height: 1.19;
+
+    color: #FFFFFF;
+}
+
+.main-title::before {
+    content: "";
+    background: url(../image/decor.svg) 0 0 / 100% no-repeat;
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    top: -10px;
+    left: -34px;
 }
 .main-text {
 }
@@ -311,7 +332,23 @@ body {
     gap: 32px;
 }
 .images-main-item {
+    border-radius: 50% / 29%;
+    overflow: hidden;
 }
+
+.images-main-item-1,
+.images-main-item-4 {
+    border-radius: 50% / 29%;
+}
+
+.images-main-item-2 {
+    border-radius: 50%  50% 0 50%;
+}
+
+.images-main-item-3 {
+    border-radius: 50%  0 50% 50%;
+}
+
 
 .images-main-item img {
     max-width: 100%;
