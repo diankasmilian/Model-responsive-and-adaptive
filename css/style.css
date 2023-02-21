@@ -303,6 +303,10 @@ body {
     color: #FFFFFF;
 }
 
+.main-title:not(:last-child) {
+    margin-bottom: 28px;
+}
+
 .main-title::before {
     content: "";
     background: url(../image/decor.svg) 0 0 / 100% no-repeat;
@@ -313,7 +317,9 @@ body {
     left: -34px;
 }
 .main-text {
+    color: #9C9C9C;
 }
+
 .main-action {
 }
 .main-button {
@@ -357,6 +363,15 @@ body {
 @media (max-width: 991.98px) {
     .main {
         padding-top: 120px;
+    }
+
+    .text {
+        line-height: 1.5;
+    }
+    
+    .text-big {
+        font-size: 18px; 
+        color: #9C9C9C;
     }
 }
 
